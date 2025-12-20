@@ -1,0 +1,153 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2d3748;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 1.125rem;
+    color: #718096;
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.statCard {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.statCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.statNumber {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.statLabel {
+    font-size: 0.875rem;
+    opacity: 0.9;
+}
+
+.info {
+    background: #f7fafc;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-top: 3rem;
+    border: 1px solid #e2e8f0;
+}
+
+.infoTitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #2d3748;
+    margin-bottom: 1rem;
+}
+
+.infoText {
+    color: #718096;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.infoLink {
+    display: inline-block;
+    color: #667eea;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.infoLink:hover {
+    color: #5a67d8;
+    transform: translateX(5px);
+}
+
+@media (min-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .description {
+        font-size: 1.25rem;
+    }
+
+    .stats {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .statNumber {
+        font-size: 2.5rem;
+    }
+
+    .statLabel {
+        font-size: 1rem;
+    }
+
+    .infoTitle {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .info {
+        padding: 3rem;
+    }
+
+    .infoText {
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .title {
+        font-size: 1.75rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .statCard {
+        padding: 1.25rem;
+    }
+
+    .statNumber {
+        font-size: 1.75rem;
+    }
+
+    .info {
+        padding: 1.5rem;
+    }
+}

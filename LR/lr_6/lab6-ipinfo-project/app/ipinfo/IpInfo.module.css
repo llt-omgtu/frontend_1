@@ -1,0 +1,121 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2d3748;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 1.125rem;
+    color: #718096;
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.error {
+    background-color: #fed7d7;
+    border: 1px solid #fc8181;
+    color: #c53030;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.historyPreview {
+    background: white;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+}
+
+.historyTitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #2d3748;
+    margin-bottom: 1rem;
+}
+
+.historyList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.historyItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    background: #f7fafc;
+    border-radius: 0.5rem;
+    border: 1px solid #e2e8f0;
+    transition: all 0.2s;
+}
+
+.historyItem:hover {
+    background: #edf2f7;
+    border-color: #cbd5e0;
+}
+
+.historyIp {
+    font-family: monospace;
+    font-weight: bold;
+    color: #2d3748;
+    font-size: 0.95rem;
+}
+
+.historyLocation {
+    color: #718096;
+    font-size: 0.875rem;
+}
+
+.noHistory {
+    color: #a0aec0;
+    text-align: center;
+    padding: 1rem;
+    font-style: italic;
+}
+
+@media (min-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .description {
+        font-size: 1.25rem;
+    }
+
+    .historyPreview {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .title {
+        font-size: 1.75rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .historyItem {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+}

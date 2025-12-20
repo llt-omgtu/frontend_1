@@ -1,0 +1,27 @@
+.featureCard {
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+    color: #e2e8f0;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    border: 1px solid #4a5568;
+}
+
+.featureCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    border-color: #667eea;
+}
+
+.featureTitle {
+    color: white;
+}
+
+.featureText {
+    color: #cbd5e0;
+}
+
+.featureLink {
+    color: #90cdf4;
+}

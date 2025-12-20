@@ -1,0 +1,144 @@
+.card {
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+    margin: 2rem 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2d3748;
+    margin: 0;
+}
+
+.badge {
+    background: #c6f6d5;
+    color: #22543d;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+}
+
+.infoItem {
+    padding: 1rem;
+    background: #f7fafc;
+    border-radius: 0.5rem;
+    border: 1px solid #e2e8f0;
+}
+
+.label {
+    display: block;
+    font-size: 0.875rem;
+    color: #718096;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.value {
+    display: block;
+    font-size: 1rem;
+    color: #2d3748;
+    font-weight: 500;
+    word-break: break-all;
+}
+
+.mapLink {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.mapButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, #4299e1 0%, #3182ce 100%);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.mapButton:hover {
+    background: linear-gradient(135deg, #3182ce 0%, #2b6cb0 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(66, 153, 225, 0.3);
+}
+
+/* Адаптивные стили */
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .title {
+        font-size: 1.75rem;
+    }
+
+    .value {
+        font-size: 1.125rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card {
+        padding: 2.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .card {
+        padding: 1.5rem;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .badge {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .infoItem {
+        padding: 0.75rem;
+    }
+
+    .mapButton {
+        width: 100%;
+        justify-content: center;
+    }
+}
