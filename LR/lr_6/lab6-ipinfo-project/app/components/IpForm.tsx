@@ -25,7 +25,7 @@ export default function IpForm({ onSubmit, loading }: IpFormProps) {
                     type="text"
                     value={ip}
                     onChange={(e) => setIp(e.target.value)}
-                    placeholder="Введите IP-адрес (например: 8.8.8.8) или оставьте пустым"
+                    placeholder="Введите IP-адрес "
                     className={styles.input}
                     disabled={loading}
                 />
@@ -54,13 +54,6 @@ export default function IpForm({ onSubmit, loading }: IpFormProps) {
                         className={styles.exampleButton}
                     >
                         Cloudflare (1.1.1.1)
-                    </button>
-                    <button
-                        type="button"
-                        onClick={() => setIp('')}
-                        className={styles.exampleButton}
-                    >
-                        Мой IP
                     </button>
                 </div>
             </div>
