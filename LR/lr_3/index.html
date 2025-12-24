@@ -2,30 +2,45 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа 3</title>
     <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/script.js" defer></script>
-
-    <title>Список задач</title>
 </head>
 <body>
-    <div>
+<h1>Управление данными</h1>
+<script src="scripts/script.js"></script>
+<form id="dataForm">
+    <input type="text" placeholder="Имя" id="name">
+    <input type="email" placeholder="Email" id="email">
+    <input type="tel" placeholder="Телефон" id="phone">
+    <button type="submit">Добавить</button>
+</form>
+<div id="error"></div>
 
-        <h1>Список задач</h1>
+<table id="dataTable">
+    <thead>
+    <tr>
+        <th>Имя</th>
+        <th>Email</th>
+        <th>Телефон</th>
+        <th>Действие</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
 
-        <div>
-            <input id="taskname" type="text" placeholder="Ваша задача">
-            <button id="addBut">Добавить</button>
-        </div>
-
-
-        <ul>
-            <il id="tasklist">
-            </il>
-        </ul>
-
-
+<h2>Слайдер</h2>
+<div class="slider">
+    <div class="slides">
+        <div class="slide">Слайд 1</div>
+        <div class="slide">Слайд 2</div>
+        <div class="slide">Слайд 3</div>
+        <div class="slide">Слайд 4</div>
     </div>
+    <button class="prev">‹</button>
+    <button class="next">›</button>
+</div>
+
 
 </body>
 </html>
